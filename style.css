@@ -58,7 +58,8 @@
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 22% 78%;
+    grid-template-columns: 20% repeat(1,78%);
+    grid-column-gap: 24px;
     grid-column-gap: 30px;
     padding: 60px 0;
 }
@@ -89,7 +90,7 @@
     gap: 15px;
 }
 .blog{
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: 0 0 1px 0;
     border-radius: 10px;
     padding-bottom: 10px;
 }
@@ -154,8 +155,34 @@ footer .menu a{
           padding: 10px;
           margin: 10px;
 }
-
-
+.social-icon {
+    text-align: center;
+    margin-top: 28px;
+}
+.social-icon a {
+    font-size: 20px;
+    color: #bbb3b3;
+    margin: 0 20px;
+}
+/* code for upcoming-match pages */
+.match{
+    box-shadow: 0 0 1px 0;
+    text-align: center;
+    padding: 50px 0 ;
+    border-radius: 10px;
+}
+.match-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.match-content span{
+     margin: 15px;
+     font-weight: 700;
+}
+.match-footer span{
+    color: gray;
+}
 
 
 
