@@ -41,9 +41,16 @@
     font-weight: 400;
     border-radius: 5px;
      color: #fff;
+     border: 1px solid transparent;
+     transition: .6s ease-in-out;
+}
+a.btn:hover {
+    border: 1px solid red;
+    background: transparent;
 }
 .item .item-content a i{
     font-size: 15px;
+    margin-left: 10px;
 }
 
 .item .item-img img{
@@ -79,6 +86,13 @@
   padding: 10px;
   border-radius: 8px;
   margin: 22px 0;
+  border: 1px solid transparent;
+  transition: .5s ease-in-out;
+}
+.box-content a:hover {
+    border: 1px solid red;
+    background: transparent;
+    color: #fff;
 }
 .active{
     background: #DD0000 !important;
@@ -93,6 +107,12 @@
     box-shadow: 0 0 1px 0;
     border-radius: 10px;
     padding-bottom: 10px;
+    border: 1px solid transparent;
+    transition: .7s ease-out;
+    cursor: pointer;
+}
+.blog:hover {
+    border: 1px solid #999;
 }
 .blog-image img{
     width: 100%;
@@ -163,6 +183,12 @@ footer .menu a{
     font-size: 20px;
     color: #bbb3b3;
     margin: 0 20px;
+    transition: .5s ease-in;
+}
+.social-icon a:hover {
+    position: relative;
+    top: -2px;
+    color: #fff;
 }
 /* code for upcoming-match pages */
 .match{
@@ -170,6 +196,11 @@ footer .menu a{
     text-align: center;
     padding: 50px 0 ;
     border-radius: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.match:hover {
+    border: 1px solid rgb(216, 214, 214);
 }
 .match-content{
     display: flex;
