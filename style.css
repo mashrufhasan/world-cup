@@ -8,6 +8,7 @@
     padding-top: 20px;
     border-radius: 10px;
     color: #fff;
+    overflow: hidden;
 }
 .item{
    flex-basis: 49%;
@@ -24,6 +25,28 @@
     font-weight: 700;
     font-size: 60px;
     line-height: 68px;
+}
+.animation, .animation-01, .animation-02{
+    position: relative;
+    animation: identifier 3s ease forwards .6s;
+    opacity: 0;
+}
+.animation-01{
+    animation: identifier 3s ease forwards 1s;
+}
+.animation-02{
+    animation: identifier 3s ease forwards 1.5s;
+    animation-delay: 2s;
+}
+
+@keyframes identifier {
+    0%{
+        left: -150%;
+    }
+    100%{
+        left: 0%;
+        opacity: 1;
+    }
 }
 .item .item-content p{
     font-weight: 400;
@@ -253,6 +276,11 @@ footer .menu a{
         margin-right: 3px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 4px;
     }
+    .box-content a:hover {
+        border: 1px solid red;
+        background: transparent;
+        color: #000;
+    }
     .box.right {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -309,6 +337,11 @@ media query for mobile
 .box-content a {
     display: block;
     width: 100%;
+}
+.box-content a:hover {
+    border: 1px solid red;
+    background: transparent;
+    color: #000;
 }
 .box.right {
     grid-template-columns: repeat(1, 1fr);
