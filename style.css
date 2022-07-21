@@ -249,11 +249,16 @@ footer .menu a{
         line-height: 44px;
     }
     .item .item-content p {
-        height: 40px;
+        height: 46px;
         overflow: hidden;
         text-overflow: ellipsis;
-        font-size: 13px;
+        font-size: 14px;
         padding: unset;
+        white-space: nowrap;
+        width: 250px;
+    }
+    .item-content br {
+        display: block !important;
     }
     .item .item-img img {
         width: 100%;
@@ -325,6 +330,9 @@ media query for mobile
 .item .item-content h1{
     font-size: 30px;
     line-height: 38px;
+}
+.item .item-content p {
+    width: 300px;
 }
 .item .item-img{
     text-align: center;
