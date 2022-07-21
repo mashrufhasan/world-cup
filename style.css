@@ -332,7 +332,8 @@ media query for mobile
     line-height: 38px;
 }
 .item .item-content p {
-    width: 300px;
+    width: 100%;
+    text-align: center;
 }
 .item .item-img{
     text-align: center;
